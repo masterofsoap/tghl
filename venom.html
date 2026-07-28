@@ -3,13 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Colorado Venom Hockey | Official Team Site</title>
-  <meta name="description" content="Official website of the Colorado Venom Hockey Club – competing in ice, roller, and elite tournaments. Based in Arvada & Lakewood, CO." />
+  <title>Colorado Venom · Charity Hockey</title>
+  <meta name="description" content="Colorado Venom: elite ice, roller & tournament hockey with a charitable soul. Based in Arvada & Lakewood. Join the movement." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800;14..32,900&display=swap" rel="stylesheet" />
   <style>
-    /* --- RESET & BASE --- */
     * {
       margin: 0;
       padding: 0;
@@ -21,8 +20,8 @@
     }
     body {
       font-family: 'Inter', sans-serif;
-      background: #0B1E2F;
-      color: #f0f4fa;
+      background: #0b0710;
+      color: #f0edf5;
       line-height: 1.6;
       overflow-x: hidden;
     }
@@ -48,24 +47,25 @@
       letter-spacing: -1.5px;
       margin-bottom: 8px;
     }
-    .section-title .gold {
-      color: #C8A74D;
+    .section-title .purple-accent {
+      color: #b388ff;
     }
     .section-subtitle {
-      color: rgba(255, 255, 255, 0.55);
+      color: rgba(255, 255, 255, 0.6);
       font-size: 1.1rem;
       max-width: 650px;
       margin-bottom: 32px;
     }
-    .gold-line {
+    .purple-line {
       width: 80px;
       height: 4px;
-      background: #C8A74D;
+      background: #b388ff;
       margin: 16px 0 28px;
       border-radius: 4px;
+      box-shadow: 0 0 12px rgba(179, 136, 255, 0.4);
     }
 
-    /* --- NAVIGATION --- */
+    /* NAV */
     .navbar {
       position: fixed;
       top: 0;
@@ -77,9 +77,10 @@
       background: transparent;
     }
     .navbar.scrolled {
-      background: rgba(11, 30, 47, 0.92);
-      backdrop-filter: blur(10px);
-      box-shadow: 0 6px 30px rgba(0, 0, 0, 0.6);
+      background: rgba(11, 7, 16, 0.92);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.7);
+      border-bottom: 1px solid rgba(179, 136, 255, 0.15);
     }
     .navbar .container {
       display: flex;
@@ -87,20 +88,25 @@
       justify-content: space-between;
     }
     .logo {
-      font-size: 1.7rem;
+      font-size: 1.8rem;
       font-weight: 900;
       letter-spacing: -1px;
       color: #fff;
       display: flex;
       align-items: center;
-      gap: 6px;
+      gap: 8px;
     }
-    .logo .gold {
-      color: #C8A74D;
+    .logo img {
+      height: 44px;
+      width: auto;
+      filter: drop-shadow(0 0 10px rgba(179, 136, 255, 0.3));
+    }
+    .logo .purple {
+      color: #b388ff;
     }
     .nav-links {
       display: flex;
-      gap: 32px;
+      gap: 36px;
       list-style: none;
       font-weight: 500;
       font-size: 0.95rem;
@@ -118,11 +124,11 @@
       left: 0;
       width: 0;
       height: 2px;
-      background: #C8A74D;
+      background: #b388ff;
       transition: width 0.25s ease;
     }
     .nav-links a:hover {
-      color: #C8A74D;
+      color: #b388ff;
     }
     .nav-links a:hover::after {
       width: 100%;
@@ -147,7 +153,7 @@
       .nav-links {
         display: none;
         flex-direction: column;
-        background: rgba(11, 30, 47, 0.98);
+        background: rgba(11, 7, 16, 0.98);
         backdrop-filter: blur(16px);
         padding: 28px 32px;
         position: absolute;
@@ -155,8 +161,8 @@
         left: 0;
         width: 100%;
         gap: 20px;
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
-        border-top: 1px solid rgba(200, 167, 77, 0.15);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+        border-top: 1px solid rgba(179, 136, 255, 0.15);
       }
       .nav-links.open {
         display: flex;
@@ -166,14 +172,14 @@
       }
     }
 
-    /* --- HERO --- */
+    /* HERO */
     .hero {
       height: 100vh;
-      min-height: 720px;
+      min-height: 700px;
       display: flex;
       align-items: center;
       position: relative;
-      background: #0B1E2F;
+      background: #0b0710;
       overflow: hidden;
     }
     .hero::before {
@@ -181,8 +187,8 @@
       position: absolute;
       inset: 0;
       background:
-        radial-gradient(ellipse at 20% 50%, rgba(196, 30, 58, 0.25) 0%, transparent 60%),
-        radial-gradient(ellipse at 80% 50%, rgba(11, 30, 47, 0.7) 0%, transparent 60%);
+        radial-gradient(ellipse at 20% 50%, rgba(179, 136, 255, 0.2) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 50%, rgba(11, 7, 16, 0.8) 0%, transparent 60%);
       z-index: 1;
     }
     .hero-video-bg {
@@ -193,8 +199,8 @@
       height: 100%;
       object-fit: cover;
       z-index: 0;
-      opacity: 0.3;
-      background: radial-gradient(circle at 30% 30%, #1f405a, #0B1E2F 80%);
+      opacity: 0.15;
+      background: radial-gradient(circle at 30% 30%, #2a1f3d, #0b0710 80%);
     }
     .hero-content {
       position: relative;
@@ -203,8 +209,8 @@
     }
     .hero-content .tag {
       display: inline-block;
-      background: rgba(200, 167, 77, 0.12);
-      color: #C8A74D;
+      background: rgba(179, 136, 255, 0.12);
+      color: #b388ff;
       padding: 6px 20px;
       border-radius: 40px;
       font-size: 0.8rem;
@@ -212,7 +218,7 @@
       letter-spacing: 1px;
       text-transform: uppercase;
       margin-bottom: 16px;
-      border: 1px solid rgba(200, 167, 77, 0.2);
+      border: 1px solid rgba(179, 136, 255, 0.25);
     }
     .hero-content h1 {
       font-size: clamp(3.8rem, 14vw, 6.8rem);
@@ -221,14 +227,15 @@
       line-height: 1.02;
       margin-bottom: 12px;
     }
-    .hero-content h1 .gold {
-      color: #C8A74D;
+    .hero-content h1 .purple {
+      color: #b388ff;
+      text-shadow: 0 0 30px rgba(179, 136, 255, 0.3);
     }
     .hero-sub {
       font-size: 1.3rem;
       font-weight: 400;
-      color: #d6dce6;
-      border-left: 4px solid #C8A74D;
+      color: #d6d0e6;
+      border-left: 4px solid #b388ff;
       padding-left: 20px;
       margin: 8px 0 18px;
     }
@@ -244,7 +251,7 @@
       flex-direction: column;
       align-items: center;
       gap: 8px;
-      color: rgba(255, 255, 255, 0.3);
+      color: rgba(255, 255, 255, 0.25);
       font-size: 0.7rem;
       letter-spacing: 2.5px;
       text-transform: uppercase;
@@ -254,17 +261,17 @@
     .scroll-indicator .arrow {
       width: 28px;
       height: 28px;
-      border-right: 2px solid #C8A74D;
-      border-bottom: 2px solid #C8A74D;
+      border-right: 2px solid #b388ff;
+      border-bottom: 2px solid #b388ff;
       transform: rotate(45deg);
-      opacity: 0.4;
+      opacity: 0.5;
     }
     @keyframes bob {
       0%, 100% { transform: translateY(0); }
       50% { transform: translateY(10px); }
     }
 
-    /* --- ABOUT --- */
+    /* ABOUT */
     .about-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -282,7 +289,7 @@
       flex-wrap: wrap;
       gap: 20px 32px;
       margin-top: 12px;
-      border-left: 3px solid #C8A74D;
+      border-left: 3px solid #b388ff;
       padding-left: 32px;
     }
     .timeline-item {
@@ -290,7 +297,7 @@
     }
     .timeline-item .year {
       font-weight: 800;
-      color: #C8A74D;
+      color: #b388ff;
       font-size: 1.3rem;
     }
     .timeline-item p {
@@ -304,7 +311,7 @@
       }
     }
 
-    /* --- TEAM CARDS --- */
+    /* TEAM CARDS */
     .team-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -314,21 +321,21 @@
     .team-card {
       background: rgba(255, 255, 255, 0.03);
       backdrop-filter: blur(4px);
-      border-radius: 28px;
+      border-radius: 32px;
       overflow: hidden;
       transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.4s ease;
-      border: 1px solid rgba(200, 167, 77, 0.08);
+      border: 1px solid rgba(179, 136, 255, 0.1);
       display: flex;
       flex-direction: column;
     }
     .team-card:hover {
       transform: translateY(-10px);
-      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
-      border-color: rgba(200, 167, 77, 0.3);
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(179, 136, 255, 0.2);
+      border-color: rgba(179, 136, 255, 0.4);
     }
     .team-card .card-img {
       height: 180px;
-      background: #0a1a2a;
+      background: #0f0a18;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -338,7 +345,7 @@
       max-height: 100%;
       width: auto;
       object-fit: contain;
-      filter: brightness(1.05) drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3));
+      filter: brightness(1.1) drop-shadow(0 4px 16px rgba(179, 136, 255, 0.2));
     }
     .team-card .card-body {
       padding: 26px 22px 24px;
@@ -349,8 +356,8 @@
       font-weight: 700;
       margin-bottom: 6px;
     }
-    .team-card h3 .gold {
-      color: #C8A74D;
+    .team-card h3 .purple {
+      color: #b388ff;
     }
     .team-card p {
       color: rgba(255, 255, 255, 0.7);
@@ -358,14 +365,14 @@
       line-height: 1.7;
     }
     .tournament-feature {
-      background: rgba(196, 30, 58, 0.08);
-      border-left: 4px solid #C41E3A;
+      background: rgba(179, 136, 255, 0.06);
+      border-left: 4px solid #b388ff;
       padding: 16px 18px;
       margin-top: 18px;
       border-radius: 14px;
     }
     .tournament-feature .badge {
-      background: #C41E3A;
+      background: #7c4dff;
       padding: 4px 14px;
       border-radius: 40px;
       font-size: 0.65rem;
@@ -374,13 +381,14 @@
       letter-spacing: 0.8px;
       text-transform: uppercase;
       margin-bottom: 6px;
+      color: #fff;
     }
     .tournament-feature strong {
       font-size: 1.05rem;
     }
     .countdown {
       font-weight: 700;
-      color: #C8A74D;
+      color: #b388ff;
       font-size: 1.1rem;
     }
     @media (max-width: 992px) {
@@ -394,24 +402,24 @@
       }
     }
 
-    /* --- LEADERSHIP --- */
+    /* LEADERSHIP */
     .leadership-card {
-      background: rgba(255, 255, 255, 0.03);
-      border-radius: 28px;
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: 32px;
       padding: 36px;
-      border: 1px solid rgba(200, 167, 77, 0.12);
+      border: 1px solid rgba(179, 136, 255, 0.15);
       max-width: 540px;
       transition: border-color 0.3s;
     }
     .leadership-card:hover {
-      border-color: #C8A74D;
+      border-color: #b388ff;
     }
     .leadership-card h4 {
       font-size: 2rem;
       font-weight: 700;
     }
     .leadership-card .role {
-      color: #C8A74D;
+      color: #b388ff;
       font-weight: 600;
       letter-spacing: 0.5px;
       font-size: 1rem;
@@ -421,8 +429,20 @@
       color: rgba(255, 255, 255, 0.7);
       line-height: 1.8;
     }
+    .captain-badge {
+      display: inline-block;
+      background: rgba(179, 136, 255, 0.15);
+      padding: 2px 14px;
+      border-radius: 40px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      color: #b388ff;
+      border: 1px solid rgba(179, 136, 255, 0.2);
+      margin-left: 8px;
+    }
 
-    /* --- MISSION --- */
+    /* MISSION */
     .mission-stats {
       display: flex;
       flex-wrap: wrap;
@@ -441,31 +461,31 @@
       margin-top: 2px;
     }
 
-    /* --- MAP --- */
+    /* MAP */
     .map-wrapper {
-      border-radius: 28px;
+      border-radius: 32px;
       overflow: hidden;
-      border: 1px solid rgba(200, 167, 77, 0.12);
+      border: 1px solid rgba(179, 136, 255, 0.12);
       margin-top: 20px;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
-      background: #0a1a2a;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+      background: #0f0a18;
     }
     .map-wrapper iframe {
       width: 100%;
       height: 400px;
       border: 0;
       display: block;
-      filter: invert(0.9) hue-rotate(180deg) saturate(0.7);
+      filter: invert(0.85) hue-rotate(240deg) saturate(0.6);
     }
     .map-address {
       padding: 18px 28px;
-      background: rgba(0, 0, 0, 0.3);
+      background: rgba(0, 0, 0, 0.4);
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
       gap: 12px;
-      border-top: 1px solid rgba(200, 167, 77, 0.06);
+      border-top: 1px solid rgba(179, 136, 255, 0.06);
     }
     .map-address .addr {
       display: flex;
@@ -475,11 +495,11 @@
       font-weight: 500;
     }
     .map-address .addr span {
-      color: #C8A74D;
+      color: #b388ff;
       font-size: 1.2rem;
     }
 
-    /* --- SPONSORS --- */
+    /* SPONSORS */
     .sponsors {
       display: flex;
       flex-wrap: wrap;
@@ -488,23 +508,23 @@
       margin: 24px 0 10px;
     }
     .sponsor-logo {
-      background: rgba(255, 255, 255, 0.03);
+      background: rgba(255, 255, 255, 0.02);
       padding: 16px 32px;
       border-radius: 60px;
-      border: 1px solid rgba(200, 167, 77, 0.1);
+      border: 1px solid rgba(179, 136, 255, 0.1);
       font-weight: 600;
-      color: #C8A74D;
+      color: #b388ff;
       letter-spacing: 0.5px;
       font-size: 0.9rem;
       transition: all 0.3s ease;
     }
     .sponsor-logo:hover {
-      background: rgba(200, 167, 77, 0.08);
-      border-color: #C8A74D;
+      background: rgba(179, 136, 255, 0.06);
+      border-color: #b388ff;
       transform: scale(1.03);
     }
 
-    /* --- CONTACT --- */
+    /* CONTACT */
     .contact-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -524,7 +544,7 @@
       margin: 24px 0;
     }
     .social-icons a {
-      background: rgba(255, 255, 255, 0.04);
+      background: rgba(255, 255, 255, 0.03);
       padding: 10px 20px;
       border-radius: 40px;
       font-size: 0.9rem;
@@ -533,16 +553,16 @@
       border: 1px solid rgba(255, 255, 255, 0.05);
     }
     .social-icons a:hover {
-      background: #C8A74D;
-      color: #0B1E2F;
+      background: #b388ff;
+      color: #0b0710;
     }
     .contact-form input,
     .contact-form textarea {
       width: 100%;
       padding: 16px 18px;
       margin-bottom: 18px;
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
       border-radius: 16px;
       color: #fff;
       font-size: 1rem;
@@ -552,22 +572,23 @@
     .contact-form input:focus,
     .contact-form textarea:focus {
       outline: none;
-      border-color: #C8A74D;
-      background: rgba(255, 255, 255, 0.06);
+      border-color: #b388ff;
+      background: rgba(255, 255, 255, 0.05);
+      box-shadow: 0 0 0 3px rgba(179, 136, 255, 0.1);
     }
     .contact-form button {
-      background: #C8A74D;
+      background: #b388ff;
       border: none;
-      padding: 16px 40px;
+      padding: 16px 44px;
       border-radius: 60px;
       font-weight: 700;
       font-size: 1rem;
-      color: #0B1E2F;
+      color: #0b0710;
       cursor: pointer;
       transition: background 0.3s, transform 0.2s;
     }
     .contact-form button:hover {
-      background: #b8963a;
+      background: #9a6ee8;
       transform: scale(1.02);
     }
     @media (max-width: 768px) {
@@ -577,11 +598,11 @@
       }
     }
 
-    /* --- FOOTER --- */
+    /* FOOTER */
     .footer {
-      background: #05131f;
+      background: #06040a;
       padding: 44px 0 24px;
-      border-top: 1px solid rgba(200, 167, 77, 0.06);
+      border-top: 1px solid rgba(179, 136, 255, 0.06);
     }
     .footer .container {
       display: flex;
@@ -596,24 +617,24 @@
       flex-wrap: wrap;
     }
     .footer-links a {
-      color: rgba(255, 255, 255, 0.4);
+      color: rgba(255, 255, 255, 0.35);
       font-size: 0.9rem;
       transition: color 0.2s;
     }
     .footer-links a:hover {
-      color: #C8A74D;
+      color: #b388ff;
     }
     .footer-tagline {
-      color: #C8A74D;
+      color: #b388ff;
       font-weight: 600;
       letter-spacing: 0.3px;
     }
     .footer-copy {
-      color: rgba(255, 255, 255, 0.15);
+      color: rgba(255, 255, 255, 0.12);
       font-size: 0.85rem;
     }
 
-    /* --- RESPONSIVE --- */
+    /* RESPONSIVE */
     @media (max-width: 768px) {
       .hero-content h1 {
         font-size: 3.2rem;
@@ -649,7 +670,8 @@
   <nav class="navbar" id="navbar">
     <div class="container">
       <div class="logo">
-        <span class="gold"></span>Colorado<span class="gold">Venom</span>
+        <img src="VenomA.png" alt="Colorado Venom main logo" />
+        <span class="purple">Venom</span>
       </div>
       <button class="hamburger" id="hamburger" aria-label="Menu">
         <span></span><span></span><span></span>
@@ -669,9 +691,9 @@
   <section class="hero" id="home">
     <div class="hero-video-bg"></div>
     <div class="container hero-content">
-      <div class="tag">Est. 2026 • Arvada & Lakewood</div>
-      <h1>COLORADO <span class="gold">VENOM</span></h1>
-      <div class="hero-sub">Built in Arvada & Lakewood, Colorado</div>
+      <div class="tag">Est. 2026 · Charity driven · Arvada & Lakewood</div>
+      <h1>COLORADO <span class="purple">VENOM</span></h1>
+      <div class="hero-sub">Elite hockey · bigger purpose</div>
       <p class="hero-text">Colorado Venom is a competitive hockey organization representing Colorado in Ice, Roller, and Elite tournament competition while using the game we love to raise money and awareness for charitable causes.</p>
       <div class="scroll-indicator">
         <span>Scroll</span>
@@ -685,9 +707,9 @@
     <div class="container">
       <div class="about-grid">
         <div class="about-text">
-          <h2 class="section-title">About <span class="gold">Colorado Venom</span></h2>
-          <div class="gold-line"></div>
-          <p>Colorado Venom is based in Arvada and Lakewood, Colorado. The organization was founded in 2026 around the idea that competitive hockey can make a positive impact. Whether competing on ice or inline, every tournament represents an opportunity to compete with integrity, build lifelong friendships, and support charitable initiatives throughout Colorado and beyond.</p>
+          <h2 class="section-title">About <span class="purple-accent">Colorado Venom</span></h2>
+          <div class="purple-line"></div>
+          <p>Colorado Venom is based in Arvada and Lakewood, Colorado. Founded in 2026 around the idea that competitive hockey can make a positive impact. Whether competing on ice or inline, every tournament represents an opportunity to compete with integrity, build lifelong friendships, and support charitable initiatives throughout Colorado and beyond.</p>
           <p>Our home rink is the <strong>Foothills Fieldhouse</strong> in Lakewood, a premier indoor sports facility that hosts roller hockey, lacrosse, and more.</p>
         </div>
         <div>
@@ -696,7 +718,7 @@
             <div class="timeline-item"><span class="year">2026</span><p>Ice Program Launched</p></div>
             <div class="timeline-item"><span class="year">2026</span><p>Roller Program Launched</p></div>
             <div class="timeline-item"><span class="year">2026</span><p>Elite Program Launched</p></div>
-            <div class="timeline-item"><span class="year">2027+</span><p>Future Growth</p></div>
+            <div class="timeline-item"><span class="year">2027+</span><p>Expanding impact</p></div>
           </div>
         </div>
       </div>
@@ -706,14 +728,14 @@
   <!-- TEAMS -->
   <section id="teams" class="section-padding" style="padding-top:0;">
     <div class="container">
-      <h2 class="section-title">Our <span class="gold">Teams</span></h2>
+      <h2 class="section-title">Our <span class="purple-accent">Teams</span></h2>
       <p class="section-subtitle">Three programs, one mission: compete with purpose and represent Colorado.</p>
       <div class="team-grid">
         <!-- Ice -->
         <div class="team-card">
           <div class="card-img"><img src="venom_ice.png" alt="Colorado Venom Ice Team logo"></div>
           <div class="card-body">
-            <h3><span class="gold"></span> Ice Team</h3>
+            <h3><span class="purple"></span> Ice Team</h3>
             <p>Colorado Venom Ice competes in adult hockey tournaments throughout Colorado and neighboring states, emphasizing teamwork, sportsmanship, and representing the organization at a high level while supporting charitable initiatives.</p>
           </div>
         </div>
@@ -721,7 +743,7 @@
         <div class="team-card">
           <div class="card-img"><img src="venom_roller.png" alt="Colorado Venom Roller Team logo"></div>
           <div class="card-body">
-            <h3><span class="gold"></span> Roller Team</h3>
+            <h3><span class="purple"></span> Roller Team</h3>
             <p>Colorado Venom Roller competes in high-level inline hockey tournaments across the region. Built around speed, puck movement, and relentless effort, the team proudly represents Colorado while helping raise awareness and funding for charitable causes.</p>
             <div class="tournament-feature">
               <span class="badge">UPCOMING</span>
@@ -736,7 +758,7 @@
         <div class="team-card">
           <div class="card-img"><img src="venom_elite.png" alt="Colorado Venom Elite Team logo"></div>
           <div class="card-body">
-            <h3><span class="gold"></span> Elite Team</h3>
+            <h3><span class="purple"></span> Elite Team</h3>
             <p>Colorado Venom Elite brings together top-level players for premier tournament competition. The Elite roster represents the highest level of Colorado Venom hockey while continuing the organization's commitment to leadership, sportsmanship, and charitable outreach.</p>
           </div>
         </div>
@@ -750,21 +772,21 @@
       <div style="display:grid; grid-template-columns:1fr 1fr; gap:50px; align-items:start;">
         <div>
           <h2 class="section-title">Leadership</h2>
-          <div class="gold-line"></div>
+          <div class="purple-line"></div>
           <div class="leadership-card">
-            <h4>Josiah Ehrler</h4>
-            <div class="role">Captain</div>
+            <h4>Josiah Ehrler <span class="captain-badge">C</span></h4>
+            <div class="role">Captain · Founder</div>
             <p class="bio">Captain Josiah Ehrler leads Colorado Venom with a focus on accountability, team culture, competitive excellence, and community service. His leadership reflects the organization's commitment to growing the game while making a positive impact off the rink.</p>
             <div style="margin-top:16px; color:rgba(255,255,255,0.3); font-size:0.9rem;">Assistant captains & coaches announced soon</div>
           </div>
         </div>
         <div id="mission">
-          <h2 class="section-title">Playing For <span class="gold">Something Bigger</span></h2>
-          <div class="gold-line"></div>
+          <h2 class="section-title">Playing For <span class="purple-accent">Something Bigger</span></h2>
+          <div class="purple-line"></div>
           <p style="color:rgba(255,255,255,0.8); font-size:1.05rem; line-height:1.8;">Colorado Venom believes hockey has the power to unite communities. Every tournament is an opportunity to compete at the highest level while supporting charitable organizations and creating lasting impacts beyond the game itself.</p>
           <div class="mission-stats">
             <div class="stat-item">3 <small>Programs</small></div>
-            <div class="stat-item">Ice • Roller • Elite <small>Community Focused</small></div>
+            <div class="stat-item">Ice · Roller · Elite <small>Community Focused</small></div>
             <div class="stat-item">🏆 <small>Tournament Driven</small></div>
             <div class="stat-item">📈 <small>Growing Every Season</small></div>
           </div>
@@ -776,7 +798,7 @@
   <!-- MAP / VENUE -->
   <section class="section-padding" style="padding-top:20px;">
     <div class="container">
-      <h2 class="section-title">Our <span class="gold">Home</span></h2>
+      <h2 class="section-title">Our <span class="purple-accent">Home</span></h2>
       <p class="section-subtitle">Foothills Fieldhouse — Lakewood, Colorado</p>
       <div class="map-wrapper">
         <iframe
@@ -787,32 +809,43 @@
           title="Foothills Fieldhouse Map"></iframe>
         <div class="map-address">
           <div class="addr"><span>📍</span> 3606 S Independence St, Denver, CO 80235</div>
-          <div style="color:rgba(255,255,255,0.4); font-size:0.85rem;">📍 Multi-sport facility • Roller hockey • Lacrosse</div>
+          <div style="color:rgba(255,255,255,0.4); font-size:0.85rem;">📍 Multi-sport facility · Roller hockey · Lacrosse</div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- SPONSORS -->
-
+  <section class="section-padding" style="padding-top: 10px;">
+    <div class="container">
+      <h2 class="section-title" style="font-size: 2rem;">Investors & <span class="purple-accent">Partners</span></h2>
+      <div class="purple-line" style="width: 60px;"></div>
+      <div class="sponsors">
+        <div class="sponsor-logo">⚡ Venom Capital</div>
+        <div class="sponsor-logo">🏒 Colorado Hockey Hub</div>
+        <div class="sponsor-logo">🤝 Charity Alliance</div>
+        <div class="sponsor-logo">🏆 Elite Tournaments</div>
+      </div>
+    </div>
+  </section>
 
   <!-- CONTACT -->
   <section id="contact" class="section-padding">
     <div class="container">
-      <h2 class="section-title">Get in <span class="gold">Touch</span></h2>
+      <h2 class="section-title">Get in <span class="purple-accent">Touch</span></h2>
       <p class="section-subtitle">Have questions, want to sponsor, or interested in joining the team? Reach out.</p>
       <div class="contact-grid">
         <div class="contact-info">
           <p style="font-weight:700; font-size:1.3rem;">Colorado Venom Hockey</p>
           <p style="color:rgba(255,255,255,0.6);">Arvada & Lakewood, Colorado</p>
-          <div class="detail" style="margin-top:16px;"><span style="color:#C8A74D;">📍</span> Foothills Fieldhouse<br /><span style="color:rgba(255,255,255,0.4); font-size:0.9rem;">3606 S Independence St, Denver, CO 80235</span></div>
+          <div class="detail" style="margin-top:16px;"><span style="color:#b388ff;">📍</span> Foothills Fieldhouse<br /><span style="color:rgba(255,255,255,0.4); font-size:0.9rem;">3606 S Independence St, Denver, CO 80235</span></div>
           <div class="social-icons">
             <a href="#">IG</a>
             <a href="#">X</a>
             <a href="#">FB</a>
             <a href="#">YT</a>
           </div>
-          <div style="background:rgba(255,255,255,0.02); padding:16px 20px; border-radius:20px; border:1px solid rgba(200,167,77,0.06); color:rgba(255,255,255,0.4); font-size:0.9rem;">
+          <div style="background:rgba(255,255,255,0.02); padding:16px 20px; border-radius:20px; border:1px solid rgba(179,136,255,0.08); color:rgba(255,255,255,0.4); font-size:0.9rem;">
             📧 info@coloradovenom.com
           </div>
         </div>
